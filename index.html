@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="base-style.css">
+  <link rel="stylesheet" href="style.scss">
+  <script src="script.js" defer></script>
+  <title>3D Die</title>
+</head>
+<body>
+  <div class="Scene">
+    <div class="Cube">
+      <div class="Cube__Face -Front"></div>
+      <div class="Cube__Face -Front -Backside"></div>
+      <div class="Cube__DotsOverlay -Front">
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+      </div>
+      <div class="Cube__Face -Back"></div>
+      <div class="Cube__Face -Back -Backside"></div>
+      <div class="Cube__DotsOverlay -Back">
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+      </div>
+      <div class="Cube__Face -Left"></div>
+      <div class="Cube__Face -Left -Backside"></div>
+      <div class="Cube__DotsOverlay -Left">
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+      </div>
+      <div class="Cube__Face -Right"></div>
+      <div class="Cube__Face -Right -Backside"></div>
+      <div class="Cube__DotsOverlay -Right">
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+      </div>
+      <div class="Cube__Face -Top"></div>
+      <div class="Cube__Face -Top -Backside"></div>
+      <div class="Cube__DotsOverlay -Top">
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+      </div>
+      <div class="Cube__Face -Bottom"></div>
+      <div class="Cube__Face -Bottom -Backside"></div>
+      <div class="Cube__DotsOverlay -Bottom">
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+        <span class="Dot"></span>
+      </div>
+      <div class="Cube__Face -FakeX"></div>
+      <div class="Cube__Face -FakeY"></div>
+      <div class="Cube__Face -FakeZ"></div>
+    </div>
+  </div>
+  <div class="Inputs">
+    <div class="Input">
+      <label for="rotate-x">Rotate X Axis</label>
+      <input
+        id="rotate-x"
+        type="range"
+        min="-360"
+        max="360"
+        step="1"
+        value="0"
+        data-axis="x"
+      >
+    </div>
+    <div class="Input">
+      <label for="rotate-y">Rotate Y Axis</label>
+      <input
+        id="rotate-y"
+        type="range"
+        min="-360"
+        max="360"
+        step="1"
+        value="0"
+        data-axis="y"
+      >
+    </div>
+    <div class="Input">
+      <label for="rotate-z">Rotate Z Axis</label>
+      <input
+        id="rotate-z"
+        type="range"
+        min="-360"
+        max="360"
+        step="1"
+        value="0"
+        data-axis="z"
+      >
+    </div>
+  </div>
+</body>
+</html>
